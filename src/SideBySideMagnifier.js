@@ -10,6 +10,7 @@ import SideBySideRenderer from "./SideBySideRenderer";
 const SideBySideMagnifier = props => {
   const {
     imageSrc,
+    imageSrcSet,
     largeImageSrc,
     imageAlt,
     overlayOpacity,
@@ -54,6 +55,7 @@ const SideBySideMagnifier = props => {
     >
       <SideBySideRenderer
         imageSrc={imageSrc}
+        imageSrcSet={imageSrcSet}
         largeImageSrc={largeImageSrc}
         imageAlt={imageAlt}
         overlayOpacity={overlayOpacity}

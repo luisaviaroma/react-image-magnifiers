@@ -2,7 +2,7 @@ import React from "react";
 import utils from "./utils";
 
 const Image = React.forwardRef(function(props, ref) {
-  const { onImageLoad, onLoadRefresh, src, alt, ...otherProps } = props;
+  const { onImageLoad, onLoadRefresh, src, srcSet, alt, ...otherProps } = props;
 
   const [imageIdx, setImageIdx] = React.useState(0);
   const imageErrorRef = React.useRef(false);
@@ -11,6 +11,7 @@ const Image = React.forwardRef(function(props, ref) {
   return (
     <img
       ref={ref}
+      srcSet={srcSet}
       src={imageArr[imageIdx]}
       alt={alt}
       onLoad={e => {

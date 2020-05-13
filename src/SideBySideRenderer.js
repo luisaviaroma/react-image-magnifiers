@@ -12,6 +12,7 @@ const SideBySideRenderer = props => {
     elementOffset,
     itemDimensions,
     imageSrc,
+    imageSrcSet,
     largeImageSrc,
     imageAlt,
     itemRef,
@@ -203,6 +204,7 @@ const SideBySideRenderer = props => {
           cursor: legalSize ? cursorStyle : "default"
         }}
         src={imageSrc}
+        srcSet={imageSrcSet}
         alt={imageAlt}
         onImageLoad={onImageLoad}
         onLoadRefresh={onLoadRefresh}
@@ -226,6 +228,7 @@ const SideBySideRenderer = props => {
         <Image
           style={styles.getLargeImageStyle(position.x, position.y, true)}
           src={largeImageSrc || imageSrc}
+          srcSet={imageSrcSet}
           alt={imageAlt}
           ref={itemRef}
           onImageLoad={onLargeImageLoad}
