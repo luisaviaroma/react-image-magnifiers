@@ -1,5 +1,5 @@
 {
-  "name": "react-image-magnifiers",
+  "name": "react-image-magnifiers-srcset",
   "version": "1.3.2",
   "description": "A collection of responsive, image magnifying React components for mouse and touch.",
   "keywords": [
@@ -18,12 +18,10 @@
     "product"
   ],
   "license": "MIT",
-  "author": "Adam Risberg <myniztan@hotmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/adamrisberg/react-image-magnifiers.git"
+    "url": "https://github.com/luisaviaroma/react-image-magnifiers.git"
   },
-  "homepage": "https://adamrisberg.github.io/react-image-magnifiers",
   "main": "dist/index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
